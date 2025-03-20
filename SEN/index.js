@@ -10,7 +10,7 @@ btnpost.addEventListener('click', () => {
         alert('Coloque um nome');
         return
     }
-    fetch('http://localhost:8080/pessoa',{
+    fetch('http://localhost:25000/pessoa',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ btnpost.addEventListener('click', () => {
 });
 
 btnget.addEventListener('click', () => {
-    fetch('http://localhost:8080/pessoa', {
+    fetch('http://localhost:25000/pessoa', {
         method: 'GET',
         headers: {
             'Accept': 'application/json'
