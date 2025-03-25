@@ -1,4 +1,5 @@
-const backEndHost = 'http://localhost:5000/pessoa';
+// const backEndHost = 'http://localhost:5000/pessoa';
+const backEndHost = 'http://44.193.202.97:5000/pessoa';
 const btnpost = document.getElementById('post');
 const btnget = document.getElementById('get');
 const nomeInput = document.getElementById('name');
