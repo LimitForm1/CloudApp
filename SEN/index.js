@@ -1,3 +1,4 @@
+const backEndHost = 'http://localhost:5000/pessoa';
 const btnpost = document.getElementById('post');
 const btnget = document.getElementById('get');
 const nomeInput = document.getElementById('name');
@@ -12,7 +13,7 @@ btnpost.addEventListener('click', () => {
         alert('Coloque um nome');
         return
     }
-    fetch('http://localhost:5000/pessoa',{
+    fetch(backEndHost,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -32,7 +33,7 @@ btnpost.addEventListener('click', () => {
 });
 
 btnget.addEventListener('click', () => {
-    fetch('http://localhost:5000/pessoa', {
+    fetch(backEndHost, {
         method: 'GET',
         headers: {
             'Accept': 'application/json'
